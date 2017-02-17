@@ -9,9 +9,9 @@ nav {
   nav button {
     background-color: transparent;
     outline: none;
-    border: none;
     color: white;
     margin: 5px;
+    border: none;
     font-family: Montserrat;
     font-size: 15pt; }
 
@@ -22,7 +22,9 @@ h2 {
   font-family: Montserrat; }
 
 header {
-  background: url("../images/background2.webp") no-repeat 0 0;
+  background-image: url("../images/background2.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -74,5 +76,24 @@ section {
   height: 100vh;
   object-fit: cover;
   float: right; }
+
+.project {
+  width: 33.33333vw;
+  height: 100vh;
+  transition: all 0.5s ease-in;
+  text-align: center; }
+  .project img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .project p {
+    display: none;
+    position: absolute; }
+  .project:hover {
+    background-color: #00b3b3; }
+    .project:hover img {
+      display: none; }
+    .project:hover p {
+      display: block; }
 
 /*# sourceMappingURL=master.css.map */

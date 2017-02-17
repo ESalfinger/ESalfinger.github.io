@@ -1,4 +1,5 @@
 $picture-width: 35vw
+$project-count: 3
 
 *
   padding: 0
@@ -14,9 +15,9 @@ nav
   button
     background-color: transparent
     outline: none
-    border: none
     color: white
     margin: 5px
+    border: none
     font:
       family: Montserrat
       size: 15pt
@@ -33,7 +34,10 @@ h2
     family: Montserrat
 
 header
-  background: url('../images/background2.webp') no-repeat 0 0
+  background:
+    image: url('../images/background2.webp')
+    repeat: no-repeat
+    attachment: fixed
   width: 100%
   height: 100vh
   text-align: center
@@ -98,3 +102,30 @@ section
   height: 100vh
   object-fit: cover
   float: right
+
+.project
+  @if $project-count < 4
+    width: 100vw/$project-count
+  @else
+    width: 25vw
+  height: 100vh/ceil($project-count/4)
+  transition: all .5s ease-in
+  text-align: center
+
+  img
+    object-fit: cover
+    width: 100%
+    height: 100%
+
+  p
+    display: none
+    position: absolute
+
+  &:hover
+    background-color: darken(cyan, 15)
+
+    img
+      display: none
+
+    p
+      display: block
