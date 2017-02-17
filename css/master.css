@@ -26,13 +26,13 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   background-size: 100%;
   overflow: hidden;
   color: white; }
   header h1 {
-    margin-top: 30vh;
+    margin-top: 30%;
     font-size: 200pt;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2); }
   header h2 {
@@ -46,18 +46,18 @@ body {
 
 section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #2C3539;
   color: white; }
   section h2 {
-    margin-left: 35vw;
-    width: 30vw;
+    margin-left: 35%;
+    width: 30%;
     display: inline-block;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 5%;
     font-size: 45pt; }
   section p {
-    padding-left: 10vw;
+    padding-left: 10%;
     font-family: Montserrat;
     font-size: 15pt; }
 
@@ -72,14 +72,14 @@ section {
   font-weight: normal;
   font-style: normal; }
 .sideImg {
-  width: 35vw;
-  height: 100vh;
+  width: 35%;
+  height: 100%;
   object-fit: cover;
   float: right; }
 
 .project {
-  width: 33.33333vw;
-  height: 100vh;
+  width: 33.33333%;
+  height: 100%;
   transition: all 0.5s ease-in;
   text-align: center; }
   .project img {
