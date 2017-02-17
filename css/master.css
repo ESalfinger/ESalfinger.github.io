@@ -48,6 +48,9 @@ section {
   background-color: #2C3539;
   color: white; }
   section h2 {
+    margin-left: 35vw;
+    width: 30vw;
+    display: inline-block;
     text-align: center;
     padding-top: 5vh;
     font-size: 45pt; }
@@ -62,7 +65,7 @@ section {
   font-weight: normal;
   font-style: normal; }
 .sideImg {
-  width: 30vw;
+  width: 35vw;
   height: 100vh;
   object-fit: cover;
   float: right; }
