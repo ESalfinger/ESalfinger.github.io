@@ -1,0 +1,32 @@
+doctype html
+head
+  meta(charset="utf-8")
+  title Home
+body
+  nav
+    button(type="button" name="home") Home 
+    button(type="button" name="about") About
+    button(type="button" name="projects") Projects
+    button(type="button" name="contact") Contact
+  header
+    h1 WELCOME
+    h2 This is the website of Elias Salfinger
+  section
+    h2 About
+    img(src="images/me.webp").sideImg
+    p
+      i(aria-hidden="true" style="margin: 10px").fa.fa-birthday-cake
+      |22.02.1998
+  section(style="display:flex; flex-wrap:wrap")
+    .project
+      img(src="images/koena.webp" alt="glasses of champagne")
+      p Koena
+    .project
+      img(src="images/nfconnect.webp" alt="phones held together")
+      p NFConnect
+    .project
+      img(src="images/chargen.webp" alt="barcode scanner")
+      p Pickglass
+
+link(rel="stylesheet" href="css/master.css")
+link(rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css")
